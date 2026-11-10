@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · 工位印钞机 / Privacy Policy · Salary Visualizer</title>
+<meta name="description" content="工位印钞机（Salary Visualizer）隐私政策：不收集数据、无账号、无遥测，唯一联网是每年同步公开放假安排。">
+<meta name="color-scheme" content="light dark">
+<!-- 单文件、无外部依赖，可直接放到 GitHub Pages 的仓库根目录或 /privacy/ 下 -->
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f7f9;
+    --ink: #16181d;
+    --muted: #5b6270;
+    --line: #e3e6ec;
+    --accent: #d93a4a;
+    --accent-soft: #fdeef0;
+    --max: 780px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101116;
+      --surface: #171920;
+      --ink: #eef0f4;
+      --muted: #a0a6b4;
+      --line: #2a2d37;
+      --accent: #ff6b7a;
+      --accent-soft: #2a1a1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei",
+                 "PingFang SC", "Noto Sans SC", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.78;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 40px 22px 72px; }
+  header { padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+  .mark {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-weight: 700; letter-spacing: .01em;
+  }
+  .mark svg { display: block; }
+  h1 { font-size: 30px; line-height: 1.3; margin: 18px 0 6px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+    margin: 14px 0 0; padding: 0; list-style: none;
+    color: var(--muted); font-size: 13.5px;
+  }
+  nav.lang { display: flex; gap: 8px; margin: 22px 0 8px; }
+  nav.lang a {
+    display: inline-block; padding: 7px 14px; border: 1px solid var(--line);
+    border-radius: 999px; color: var(--ink); text-decoration: none; font-size: 14px;
+  }
+  nav.lang a:hover { border-color: var(--accent); color: var(--accent); }
+  h2 {
+    font-size: 20px; line-height: 1.4; margin: 40px 0 12px;
+    padding-top: 8px; letter-spacing: -0.005em;
+  }
+  h3 { font-size: 16px; margin: 26px 0 8px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 16px; padding-left: 1.25em; }
+  li { margin: 6px 0; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .lead {
+    margin: 22px 0 8px; padding: 16px 18px; border-radius: 12px;
+    background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+    font-size: 16.5px;
+  }
+  .tablewrap { overflow-x: auto; margin: 0 0 18px; border: 1px solid var(--line); border-radius: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 520px; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--surface); font-weight: 650; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+    font-size: .9em; background: var(--surface); border: 1px solid var(--line);
+    border-radius: 5px; padding: 1px 5px; word-break: break-all;
+  }
+  td code { white-space: nowrap; word-break: normal; }
+  .note {
+    margin: 0 0 18px; padding: 12px 16px; border-left: 3px solid var(--accent);
+    background: var(--surface); border-radius: 0 8px 8px 0; color: var(--muted);
+    font-size: 14.5px;
+  }
+  .note p:last-child { margin-bottom: 0; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 8px; }
+  .en { margin-top: 8px; }
+  footer {
+    margin-top: 52px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13.5px;
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 28px 16px 56px; }
+    h1 { font-size: 25px; }
+    h2 { font-size: 18px; margin-top: 32px; }
+    body { font-size: 15.5px; }
+  }
+  @media print {
+    nav.lang { display: none; }
+    body { background: #fff; color: #000; font-size: 11pt; }
+    .wrap { max-width: none; padding: 0; }
+    a { color: #000; }
+    h2 { page-break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark">
+    <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+      <rect width="32" height="32" rx="9" fill="#14151a"/>
+      <path d="M10 8h3.2l2.8 6 2.8-6H22l-4.4 8.4H22v2.2h-4.2V21H22v2.2h-4.2V27h-3.6v-3.8H10V21h4.2v-2.4H10v-2.2h4.2z" fill="#f04652"/>
+    </svg>
+    <span>工位印钞机 · Salary Visualizer</span>
+  </div>
+  <h1>隐私政策 / Privacy Policy</h1>
+  <p class="sub">纯本地运行，不收集数据。Runs locally. Collects nothing.</p>
+  <ul class="meta">
+    <li>生效日期 / Effective: 2026-11-10</li>
+    <li>适用版本 / Applies to: v2.10.3+</li>
+    <li>开发者 / Developer: 李东豫（Hank Li）</li>
+  </ul>
+</header>
+
+<nav class="lang" aria-label="Language">
+  <a href="#zh">中文</a>
+  <a href="#en" lang="en">English</a>
+</nav>
+
+<!-- ============================ 中文 ============================ -->
+<section id="zh" lang="zh-CN">
+
+  <p class="lead">工位印钞机是一个纯本地运行的 Windows 桌面工具。它不收集你的个人数据，不需要账号，没有遥测，没有广告；你填的薪资和它记录的工时只存在你自己的电脑上。</p>
+
+  <h2>一、我们收集哪些信息</h2>
+  <p><strong>不收集。</strong></p>
+  <p>具体来说，本应用：</p>
+  <ul>
+    <li>不要求注册、登录或创建账号；</li>
+    <li>不收集姓名、邮箱、电话号码、地址、生日等身份信息；</li>
+    <li>不收集设备标识符、广告标识符、IP 地址或位置信息；</li>
+    <li>不包含任何统计分析、广告、崩溃上报或用户行为追踪组件；</li>
+    <li>不读取剪贴板、不记录按键内容、不截屏、不访问通讯录、照片或文件；</li>
+    <li>不向任何服务器上传你的薪资、工时或使用记录。</li>
+  </ul>
+  <p>应用会通过 Windows 提供的系统空闲接口，判断键盘鼠标<strong>是否在最近一段时间内被使用过</strong>。它只知道「有没有操作」，不知道你按了什么、输入了什么。</p>
+
+  <h2>二、保存在你电脑上的数据</h2>
+  <p>应用把数据写在 <code>%APPDATA%\salary-visualizer</code> 目录下，全部是本机 JSON 文件：</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>文件</th><th>内容</th><th>是否离开本机</th></tr></thead>
+      <tbody>
+        <tr><td><code>config.json</code></td><td>月薪、上下班与午休时间、计薪口径、五险一金比例、专项附加扣除、发薪日、窗口位置、显示设置</td><td>否</td></tr>
+        <tr><td><code>activity.json</code></td><td>每个工作日的在岗、空闲、加班时长，开始时间，离席标注与状态时间线</td><td>否</td></tr>
+        <tr><td><code>game.json</code></td><td>哪些成就提示已经展示过（纯界面状态）</td><td>否</td></tr>
+        <tr><td><code>*.json.bak</code></td><td>上述文件损坏时自动生成的备份</td><td>否</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>这些文件不会上传、不会同步到云端，也不会被开发者读取。你可以随时用文本编辑器打开查看，或直接删除。</p>
+
+  <h2>三、网络访问</h2>
+  <p>本应用只有一个联网动作：<strong>同步公开放假安排</strong>，通常每年一次。</p>
+  <ul>
+    <li>请求只携带年份，例如 <code>2027</code>；</li>
+    <li>不携带账号、设备标识、薪资、工时或任何可识别个人的信息；</li>
+    <li>依次尝试以下公开数据源，前一个失败才换下一个：
+      <ul>
+        <li><code>https://cdn.jsdelivr.net/gh/NateScarlet/holiday-cn@master/&lt;年份&gt;.json</code></li>
+        <li><code>https://raw.githubusercontent.com/NateScarlet/holiday-cn/master/&lt;年份&gt;.json</code></li>
+        <li><code>https://www.jieri8.com/api/holidays.php?year=&lt;年份&gt;</code></li>
+      </ul>
+    </li>
+    <li>数据源运营方可能按其自身政策记录常规访问日志（如 IP 地址），这些日志由对方控制，本应用不附加任何标识信息。</li>
+  </ul>
+  <p>设置中提供 <strong>「离线模式」</strong>。打开后应用完全不发起网络请求，改用内置的放假数据；代价是跨年后法定节假日可能不准，需要手动更新版本。</p>
+  <p>除上述同步外，应用不发起任何网络连接，包括自动更新、账号校验、数据回传。</p>
+  <div class="note"><p>你通过 Microsoft Store 安装和更新应用时，微软会按其自身隐私声明处理安装与商店相关数据。这部分不属于本应用的行为。</p></div>
+
+  <h2>四、共享与第三方</h2>
+  <ul>
+    <li>不向任何第三方出售、出租或共享你的数据；</li>
+    <li>不接入第三方广告、统计、推送或支付 SDK；</li>
+    <li>应用内没有内购，也没有付费解锁内容。</li>
+  </ul>
+
+  <h2>五、儿童隐私</h2>
+  <p>本应用是面向职场人士的效率工具，不面向儿童设计，也不收集任何年龄信息。由于应用本身不收集任何个人数据，不存在收集儿童个人信息的情形。</p>
+
+  <h2>六、数据安全</h2>
+  <ul>
+    <li>数据只存放在你的 Windows 用户目录下，受你的系统账户权限保护；</li>
+    <li>应用不把数据写到公共目录，也不开放局域网端口；</li>
+    <li>应用不做云端备份。请自行通过文件备份、系统还原或整机备份保护数据；</li>
+    <li>如果电脑被他人使用同一系统账户登录，对方可以看到这些文件。这不是应用能够阻止的，建议使用独立的 Windows 账户或磁盘加密。</li>
+  </ul>
+
+  <h2>七、保留、删除与卸载</h2>
+  <ul>
+    <li>数据保留多久，完全由你决定。应用不会自动删除历史记录，也不会在后台清理；</li>
+    <li><strong>安装版（EXE）</strong>：卸载程序默认保留 <code>%APPDATA%\salary-visualizer</code>，方便重装后继续使用。要彻底删除，卸载后手动删除该文件夹即可；</li>
+    <li><strong>商店版（MSIX）</strong>：数据位于应用容器内，从「设置 → 应用」卸载时由 Windows 一并删除；</li>
+    <li>删除该文件夹后，所有设置、记录、成就状态和 <code>.bak</code> 备份都会消失，且无法恢复。</li>
+  </ul>
+
+  <h2>八、你的权利</h2>
+  <p>由于开发者不持有你的任何数据，不存在需要向开发者申请查询、更正、导出或删除的远端数据。你对本机数据拥有完全控制权：</p>
+  <ul>
+    <li>查看：用任意文本编辑器打开上述 JSON 文件；</li>
+    <li>导出：应用内提供 CSV 导出（战绩 → 统计与导出）；</li>
+    <li>删除：删除文件夹，或卸载应用。</li>
+  </ul>
+  <p>如你对本政策有疑问，或认为应用的行为与上述说明不符，请通过下方邮箱联系。</p>
+
+  <h2>九、政策变更</h2>
+  <p>如果应用的功能变化导致数据处理方式改变（例如未来加入云同步），本政策会同步更新，并在文首标注新的生效日期。重大变更会在应用更新说明中提示。</p>
+  <p>在变更生效前产生的数据，仍按当时有效的政策处理。</p>
+
+  <h2>十、联系方式</h2>
+  <p><strong>李东豫（Hank Li）</strong><br>
+  邮箱：<a href="mailto:matreshka999@icloud.com">matreshka999@icloud.com</a></p>
+  <p>一般会在 3 个工作日内回复。</p>
+</section>
+
+<hr>
+
+<!-- ============================ English ============================ -->
+<section id="en" lang="en" class="en">
+
+  <p class="lead">Salary Visualizer is a local Windows desktop tool. It does not collect your personal data, requires no account, and contains no telemetry or advertising. The salary you enter and the work hours it records stay on your own computer.</p>
+
+  <h2>1. What we collect</h2>
+  <p><strong>Nothing.</strong></p>
+  <p>Specifically, the app:</p>
+  <ul>
+    <li>does not require registration, sign-in, or an account;</li>
+    <li>does not collect your name, email address, phone number, address, or date of birth;</li>
+    <li>does not collect device identifiers, advertising IDs, IP addresses, or location;</li>
+    <li>contains no analytics, advertising, crash-reporting, or behavioral-tracking components;</li>
+    <li>does not read the clipboard, log keystrokes, take screenshots, or access your contacts, photos, or files;</li>
+    <li>does not upload your salary, work hours, or usage records to any server.</li>
+  </ul>
+  <p>The app uses the Windows system idle API to determine whether the keyboard or mouse <strong>has been used recently</strong>. It knows only that input happened — never what you typed.</p>
+
+  <h2>2. Data stored on your computer</h2>
+  <p>The app writes to <code>%APPDATA%\salary-visualizer</code> as local JSON files:</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>File</th><th>Contents</th><th>Leaves your PC?</th></tr></thead>
+      <tbody>
+        <tr><td><code>config.json</code></td><td>Monthly salary, work and lunch hours, pay basis, social insurance and housing fund rates, special deductions, payday, window position, display settings</td><td>No</td></tr>
+        <tr><td><code>activity.json</code></td><td>Per-workday active, idle, and overtime duration, start time, away markers, and status timeline</td><td>No</td></tr>
+        <tr><td><code>game.json</code></td><td>Which achievement notifications have been shown (UI state only)</td><td>No</td></tr>
+        <tr><td><code>*.json.bak</code></td><td>Automatic backups created if a file is corrupted</td><td>No</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>These files are never uploaded, synced to the cloud, or read by the developer. You can open them in any text editor or delete them at any time.</p>
+
+  <h2>3. Network access</h2>
+  <p>The app performs exactly one network operation: <strong>syncing public holiday schedules</strong>, usually once a year.</p>
+  <ul>
+    <li>The request carries only a year, for example <code>2027</code>;</li>
+    <li>It contains no account, device identifier, salary, work hours, or any personally identifiable information;</li>
+    <li>It tries these public sources in order, falling back only on failure:
+      <ul>
+        <li><code>https://cdn.jsdelivr.net/gh/NateScarlet/holiday-cn@master/&lt;year&gt;.json</code></li>
+        <li><code>https://raw.githubusercontent.com/NateScarlet/holiday-cn/master/&lt;year&gt;.json</code></li>
+        <li><code>https://www.jieri8.com/api/holidays.php?year=&lt;year&gt;</code></li>
+      </ul>
+    </li>
+    <li>The operators of those sources may keep ordinary access logs (such as IP addresses) under their own policies. Those logs are outside this app's control, and the app adds no identifying information to the request.</li>
+  </ul>
+  <p>Settings include an <strong>Offline Mode</strong>. When enabled, the app makes no network requests and uses built-in holiday data instead; the trade-off is that public holidays may be inaccurate across a year boundary until you update the app.</p>
+  <p>Beyond this sync, the app makes no network connections — no auto-update, no account checks, no data reporting.</p>
+  <div class="note"><p>When you install or update the app through the Microsoft Store, Microsoft processes installation and store-related data under its own privacy statement. That processing is not part of this app's behavior.</p></div>
+
+  <h2>4. Sharing and third parties</h2>
+  <ul>
+    <li>We do not sell, rent, or share your data with anyone;</li>
+    <li>The app includes no third-party advertising, analytics, push, or payment SDKs;</li>
+    <li>There are no in-app purchases or paid unlocks.</li>
+  </ul>
+
+  <h2>5. Children's privacy</h2>
+  <p>This is a productivity tool for working adults. It is not directed at children and does not collect age information. Because the app collects no personal data at all, it does not collect personal information from children.</p>
+
+  <h2>6. Security</h2>
+  <ul>
+    <li>Data is stored only in your Windows user profile and protected by your account permissions;</li>
+    <li>The app does not write to public folders or open LAN ports;</li>
+    <li>The app does not back data up to the cloud. Protect it with your own file, system, or full-disk backups;</li>
+    <li>If someone else uses your Windows account, they can read these files. The app cannot prevent that; use a separate Windows account or disk encryption.</li>
+  </ul>
+
+  <h2>7. Retention, deletion, and uninstalling</h2>
+  <ul>
+    <li>Retention is entirely up to you. The app does not automatically delete history or clean up in the background;</li>
+    <li><strong>Installer version (EXE):</strong> the uninstaller keeps <code>%APPDATA%\salary-visualizer</code> by default so you can continue after reinstalling. To remove everything, delete that folder after uninstalling;</li>
+    <li><strong>Store version (MSIX):</strong> data lives in the app container and is removed by Windows when you uninstall from Settings → Apps;</li>
+    <li>Once you delete the folder, all settings, records, achievement state, and <code>.bak</code> backups are gone permanently.</li>
+  </ul>
+
+  <h2>8. Your rights</h2>
+  <p>Because the developer holds none of your data, there is no remote data to request, correct, export, or delete. You have full control over the data on your machine:</p>
+  <ul>
+    <li>View: open the JSON files in any text editor;</li>
+    <li>Export: use the built-in CSV export (Records → Statistics &amp; Export);</li>
+    <li>Delete: remove the folder or uninstall the app.</li>
+  </ul>
+  <p>If you have questions about this policy or believe the app behaves differently from what is described here, contact us at the address below.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If a change in functionality alters how data is handled (for example, adding cloud sync in the future), this policy will be updated with a new effective date at the top. Material changes will be noted in the app's release notes.</p>
+  <p>Data created before a change remains governed by the policy in effect at that time.</p>
+
+  <h2>10. Contact</h2>
+  <p><strong>Li Dongyu (Hank Li)</strong><br>
+  Email: <a href="mailto:matreshka999@icloud.com">matreshka999@icloud.com</a></p>
+  <p>We usually reply within 3 business days.</p>
+</section>
+
+<footer>
+  <p>工位印钞机 / Salary Visualizer · 隐私政策 / Privacy Policy · 2026-11-10</p>
+</footer>
+
+</div>
+</body>
+</html>
