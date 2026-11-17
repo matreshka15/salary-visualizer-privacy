@@ -1,1 +1,1 @@
-工位印钞机 / Salary Visualizer 隐私政策
+工位摸鱼大亨 / Salary Tycoon 隐私政策
